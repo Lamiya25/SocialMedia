@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33402.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{09B119E7-01EB-4FDE-8DA5-0DD06EEBB6AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{09AF2930-D059-42D0-A8C1-D4F1ED1AF227}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A5E28598-B3ED-4F06-AA3E-DF5E8CF35A3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Domain", "Core\SocialMedia.Domain\SocialMedia.Domain.csproj", "{749FAF38-6EBB-4A2C-B70F-E92193FC75B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Application", "Core\SocialMedia.Application\SocialMedia.Application.csproj", "{23BC5204-8DF6-4233-9349-2AD2586790EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Infrastructure", "Infrastructure\SocialMedia.Infrastructure\SocialMedia.Infrastructure.csproj", "{E7CE6514-D5E4-4315-A3F1-D75A2163513A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Persistance", "Infrastructure\SocialMedia.Persistance\SocialMedia.Persistance.csproj", "{4F590312-E0E2-4901-AD45-A0936A066836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Api", "Presentation\SocialMedia.Api\SocialMedia.Api.csproj", "{1CC61D9E-A03B-455C-B95B-6C86AB23EC5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{749FAF38-6EBB-4A2C-B70F-E92193FC75B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749FAF38-6EBB-4A2C-B70F-E92193FC75B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749FAF38-6EBB-4A2C-B70F-E92193FC75B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749FAF38-6EBB-4A2C-B70F-E92193FC75B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23BC5204-8DF6-4233-9349-2AD2586790EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23BC5204-8DF6-4233-9349-2AD2586790EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23BC5204-8DF6-4233-9349-2AD2586790EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23BC5204-8DF6-4233-9349-2AD2586790EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CE6514-D5E4-4315-A3F1-D75A2163513A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CE6514-D5E4-4315-A3F1-D75A2163513A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CE6514-D5E4-4315-A3F1-D75A2163513A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CE6514-D5E4-4315-A3F1-D75A2163513A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F590312-E0E2-4901-AD45-A0936A066836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F590312-E0E2-4901-AD45-A0936A066836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F590312-E0E2-4901-AD45-A0936A066836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F590312-E0E2-4901-AD45-A0936A066836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC61D9E-A03B-455C-B95B-6C86AB23EC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC61D9E-A03B-455C-B95B-6C86AB23EC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC61D9E-A03B-455C-B95B-6C86AB23EC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC61D9E-A03B-455C-B95B-6C86AB23EC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{749FAF38-6EBB-4A2C-B70F-E92193FC75B3} = {09B119E7-01EB-4FDE-8DA5-0DD06EEBB6AF}
+		{23BC5204-8DF6-4233-9349-2AD2586790EC} = {09B119E7-01EB-4FDE-8DA5-0DD06EEBB6AF}
+		{E7CE6514-D5E4-4315-A3F1-D75A2163513A} = {09AF2930-D059-42D0-A8C1-D4F1ED1AF227}
+		{4F590312-E0E2-4901-AD45-A0936A066836} = {09AF2930-D059-42D0-A8C1-D4F1ED1AF227}
+		{1CC61D9E-A03B-455C-B95B-6C86AB23EC5A} = {A5E28598-B3ED-4F06-AA3E-DF5E8CF35A3B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ECEA600-BE2F-444D-BCA4-737C22987A26}
+	EndGlobalSection
+EndGlobal
