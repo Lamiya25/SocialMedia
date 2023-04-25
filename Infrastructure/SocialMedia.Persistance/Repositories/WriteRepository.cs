@@ -27,6 +27,13 @@ namespace SocialMedia.Persistance.Repositories
             return entry.State == EntityState.Added;
         }
 
+        public async Task<T> AddEntityAsync(T model)
+        {
+            EntityEntry<T> entry = await Table.AddAsync(model);
+            entry.State = EntityState.Added;
+            return model;
+        }
+
         public async Task<bool> AddRangeAsync(List<T> data)
         {
             await Table.AddRangeAsync(data);

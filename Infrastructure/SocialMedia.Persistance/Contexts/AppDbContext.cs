@@ -18,6 +18,12 @@ namespace SocialMedia.Persistance.Contexts
         {
         }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<BaseFile> BaseFiles { get; set; }
+        public DbSet<ProfileImage> ProfileImages { get; set; }
+        public DbSet<PostImage> PostImages { get; set; }
+        public DbSet<PostReaction> PostReactions { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Reply> Replies { get; set; }
 
         //Interceptor
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -30,6 +36,13 @@ namespace SocialMedia.Persistance.Contexts
             }
 
             return base.SaveChangesAsync(cancellationToken);
+        }
+
+
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
         }
 
     }

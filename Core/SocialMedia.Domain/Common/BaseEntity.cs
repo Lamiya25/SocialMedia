@@ -9,7 +9,7 @@ namespace SocialMedia.Domain.Common
     public class BaseEntity
     {
         public string Id { get; set; }
-        public DateTime Date { get; set; }
         public bool IsDeleted { get; set; }
+        public virtual DateTime Date { get; set; }
     }
 }

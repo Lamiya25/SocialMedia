@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using SocialMedia.Application;
 using SocialMedia.Infrastructure;
+using SocialMedia.Infrastructure.Services.Storage.Local;
 using SocialMedia.Persistance;
 using System.Text;
 
@@ -14,7 +15,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddPersistanceServices();
 builder.Services.AddApplicationService();
-builder.Services.AddInfrastactureServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddStorage<LocalStorage>();
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -35,21 +37,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
          };
 
     }); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -10,6 +10,7 @@ namespace SocialMedia.Application.Repositories
     public interface IWriteRepository<T> : IRepository<T> where T : BaseEntity
     {
         Task<bool> AddAsync(T model);
+        Task<T> AddEntityAsync(T model);
         Task<bool> AddRangeAsync(List<T> data);
         bool Remove(T model);
         bool RemoveRange(List<T> data);

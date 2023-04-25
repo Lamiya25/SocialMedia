@@ -20,14 +20,14 @@ namespace SocialMedia.Persistance.Repositories
         {
             var query = Table.AsQueryable();
             if (!tracking)
-                query = query.AsNoTracking(); 
+                query = query.AsNoTracking();
             return query;
         }
 
         public IQueryable<T> GetAllWhere(Expression<Func<T, bool>> method, bool tracking = true)
         {
             var query = Table.Where(method);
-            if(!tracking)
+            if (!tracking)
                 query = query.AsNoTracking();
             return query;
         }
@@ -42,7 +42,7 @@ namespace SocialMedia.Persistance.Repositories
 
         public async Task<T> GetByIdAsync(string id, bool tracking = true)
         {
-            var query = Table.Where(x=>x.Id == id);
+            var query = Table.Where(x => x.Id == id);
             if (!tracking)
                 query = query.AsNoTracking();
             return await query.FirstOrDefaultAsync();

@@ -10,5 +10,6 @@ namespace SocialMedia.Application.Abstractions.Token
     public interface ITokenHandler
     {
         Task<DTOs.Token> CreateTokenAsync(User user);
+        string CreateRefreshToken();
     }
 }

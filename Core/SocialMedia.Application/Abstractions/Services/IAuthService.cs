@@ -1,4 +1,5 @@
 ﻿
+using SocialMedia.Application.DTOs;
 using SocialMedia.Application.Features.Commands.Auth.Login;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,9 @@ namespace SocialMedia.Application.Abstractions.Services
 {
     public interface IAuthService
     {
-        Task<LoginCommandResponse> LoginAsync(string emailOrusername, string password);
+        Task<LoginCommandResponse> LoginAsync(string emailOrUsername, string password);
+        Task<DTOs.Token> RefreshTokenLoginAsync(string refreshToken);
+        Task<DTOs.Token> GoogleLoginAsync(string idToken);
+        Task<DTOs.Token> FacebookLoginAsync(string authToken);
     }
 }
